@@ -5,11 +5,6 @@ import org.testng.annotations.Test;
 
 public class ArraysTest {
 
-  /**
-   * Test data for common array elements.
-   *
-   * @return test data array
-   */
   @DataProvider(name = "ArrayUtil")
   public static Object[][] arrays() {
     return new Object[][]{
@@ -17,8 +12,17 @@ public class ArraysTest {
             new String[]{"Python", "JAVA", "PHP", "C#", "C++", "SQL"},
             new String[]{"MySQL", "SQL", "SQLite", "Oracle", "PostgreSQL", "DB2", "JAVA"},
             new String[]{"JAVA", "SQL"}
-        }
-        // TODO add 2 more test data here
+        },
+            {
+                    new String[]{"Atom", "Postman", "PHP", "Figma", "C++", "SQL"},
+                    new String[]{"PostgreSQL", "DB2", "JAVA", "Atom", "Postman"},
+                    new String[]{"Atom","Postman"}
+            },
+            {
+                    new String[]{"Figma", "Chrome", "Charles", "Calendar", "IJ"},
+                    new String[]{"Charles", "SQL", "IJ", "Figma", "PostgreSQL", "DB2", "JAVA"},
+                    new String[]{ "Figma", "Charles", "IJ"}
+            }
     };
   }
 
